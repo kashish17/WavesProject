@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<PhotorefResponse> call, Response<PhotorefResponse> response) {
                 Log.d("ref", response.toString());
              if(response.body()!=null){
+                 Log.d("ref", "Size1"+String.valueOf(photo.size()));
                  photo= response.body().getResult().getPhotos();
 
                  Log.d("ref", "Size"+String.valueOf(photo.size()));

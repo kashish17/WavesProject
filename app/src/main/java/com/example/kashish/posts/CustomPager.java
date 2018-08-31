@@ -28,6 +28,7 @@ public class CustomPager extends PagerAdapter {
 
     }
 
+
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
 
